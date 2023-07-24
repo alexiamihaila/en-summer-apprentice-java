@@ -1,0 +1,36 @@
+build/
+derby.log
+/repository/
+repository.xml
+.gradle/
+.idea/*
+!.idea/runConfigurations/Vagrant_Remote_Debug.xml
+*.iml
+/bin/
+.DS_Store
+/.classpath
+/.project
+/.settings
+/solr
+node_modules
+out/
+
+# Ansible roles
+.pipeline/roles
+
+# Ansible checkpoint files
+.pipeline/*.retry
+
+# Packer manifests
+.pipeline/manifest.json
+
+# Local .terraform directories
+**/.terraform/*
+
+# Include tfplan files to ignore the plan output of command: terraform plan -out=tfplan
+# example: *tfplan*
+*tfplan*
+*.plan
+
+# Lock files
+**/.terraform.lock.hcl
